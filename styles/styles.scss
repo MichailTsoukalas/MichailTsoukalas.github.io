@@ -615,6 +615,7 @@ section {
 // CONTROLS
 
 .theme-btn {
+    transform: scale(1);
     padding: 1rem;
     cursor: pointer;
     background-color: var(--color-secondary);
