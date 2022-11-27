@@ -214,14 +214,10 @@
 
         .control {
             margin: 1rem .3rem;
-            // width: 50%;
-            // height: 50%;
         }
 
         .theme-btn {
             margin: 1rem .3rem;
-            // width: 50%;
-            // height: 50%;
         }
     }
 
@@ -310,4 +306,20 @@
             }
         }
     }
+}
+
+@media (hover:hover) {
+
+    .theme-btn {
+        &:hover {
+            transform: scale(1.25);
+            transition: var(--transition);
+            i{
+                color: var(--color-highlight);
+            }
+        }
+    }
+
+
+    
 }

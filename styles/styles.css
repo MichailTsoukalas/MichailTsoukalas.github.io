@@ -347,7 +347,7 @@ section {
   border-radius: 15px;
   box-shadow: var(--box-shadow-1);
   transition: var(--transition);
-  border: 2px solid var(--color-highlight);
+  border: 3px solid var(--color-highlight);
 }
 .portfolios .portfolio-item:hover .hover-items {
   opacity: 1;
@@ -358,7 +358,7 @@ section {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 15px 15px 0 0;
+  border-radius: 13px 13px 0 0;
 }
 .portfolios .portfolio-item .hover-items {
   width: 100%;
@@ -375,7 +375,7 @@ section {
   opacity: 0;
   transform: scale(0);
   transition: var(--transition);
-  border: 2px solid var(--color-text);
+  border: 3px solid var(--color-text);
 }
 .portfolios .portfolio-item .hover-items h3 {
   font-size: 1.5rem;
@@ -413,11 +413,11 @@ section {
 }
 
 .portfolio-text {
-  margin-top: -7px;
+  margin-top: -12px;
   padding: 1.1rem;
   border-top: 8px solid var(--color-highlight);
   background-color: var(--color-secondary);
-  border-radius: 0 0 15px 15px;
+  border-radius: 0 0 12px 12px;
 }
 .portfolio-text h4 {
   font-size: 1.5rem;
@@ -544,17 +544,20 @@ section {
   transition: var(--transition);
   border: 2px solid var(--color-highlight);
 }
-.theme-btn:hover {
-  transform: scale(1.25);
-  transition: var(--transition);
-}
-.theme-btn:hover i {
-  color: var(--color-highlight);
-}
 .theme-btn i {
   font-size: 1.2rem;
   color: var(--color-text);
   pointer-events: none;
+}
+
+.pressed {
+  transform: scale(1.25);
+  transition: var(--transition);
+  background-color: var(--color-highlight);
+  border: 3px solid var(--color-text);
+}
+.pressed i {
+  color: var(--color-text);
 }
 
 .controls {
@@ -603,16 +606,6 @@ section {
   font-size: 1.2rem;
   color: var(--color-text);
   pointer-events: none;
-}
-
-.pressed {
-  transform: scale(1.25);
-  transition: var(--transition);
-  background-color: var(--color-highlight);
-  border: 2px solid var(--color-text) !important;
-}
-.pressed i {
-  color: var(--color-text);
 }
 
 .btn-con {
@@ -889,5 +882,14 @@ section {
   }
   .main-title h2 .bg-text {
     font-size: 2.3rem;
+  }
+}
+@media (hover: hover) {
+  .theme-btn:hover {
+    transform: scale(1.25);
+    transition: var(--transition);
+  }
+  .theme-btn:hover i {
+    color: var(--color-highlight);
   }
 }/*# sourceMappingURL=styles.css.map */
