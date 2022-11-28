@@ -413,17 +413,22 @@ section {
 }
 
 .portfolio-text {
-  margin-top: -12px;
+  margin-top: -8px;
   padding: 1.1rem;
-  border-top: 8px solid var(--color-highlight);
+  border-top: 3px solid var(--color-highlight);
   background-color: var(--color-secondary);
   border-radius: 0 0 12px 12px;
 }
 .portfolio-text h4 {
   font-size: 1.5rem;
   margin-bottom: 0.7rem;
+  transition: var(--transitionslow);
+  cursor: pointer;
 }
-.portfolio-text h4 p {
+.portfolio-text h4:hover {
+  color: var(--color-secondary);
+}
+.portfolio-text p {
   color: var(--color-text);
   line-height: 2rem;
   padding-bottom: 1rem;
