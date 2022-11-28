@@ -2,6 +2,18 @@
     padding-left: 0;
 }
 
+@media screen and (min-width:1400px) {
+    .theme-btn {
+        &:hover {
+            transform: scale(1.25);
+            transition: var(--transition);
+            i{
+                color: var(--color-highlight);
+            }
+        }
+    }
+}
+
 @media screen and (max-width:1432px) {
     .container {
         padding: 7rem 11rem;
@@ -306,20 +318,14 @@
             }
         }
     }
-}
-
-@media (hover:hover) {
-
-    .theme-btn {
-        &:hover {
-            transform: scale(1.25);
-            transition: var(--transition);
-            i{
-                color: var(--color-highlight);
-            }
-        }
-    }
-
 
     
 }
+
+// @media (hover:hover) {
+
+    
+
+
+    
+// }
